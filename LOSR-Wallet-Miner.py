@@ -9,7 +9,7 @@ import base64
 
 colorama.init()
 
-author = 'LO$R'
+author = 'LO$R' # i'll make anti skid later
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -35,7 +35,7 @@ if crypto == 'ETH' or crypto == 'BTC' or crypto == 'eth' or crypto == 'btc':
 LicenseKey = input(Fore.GREEN + 'Input License Key: ')
 import urllib.request
 
-if LicenseKey == 'LO$ROnTop':
+if LicenseKey == 'LO$ROnTop': # key for the wallet miner
     print(Fore.GREEN + 'Key is VAILD!')
     time.sleep(0.5)
 else:
@@ -68,7 +68,7 @@ class bcolors:
 
 def id_gen(size):
     chars = string.ascii_uppercase + string.digits
-    return ''.join(random.choices(chars, k=size))
+    return ''.join(random.choices(chars, k=size)) # random string generator
 
 def MINERRRRR(crypto):
     tries = 0
